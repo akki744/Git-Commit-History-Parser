@@ -1,0 +1,15 @@
+{
+  "name": "commithistoryparser",
+  "version": "1.0.0",
+  "description": "Parses the git commit history from a .txt file and creates a .json file containing list of all parsed objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AakashPrakash",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^10.12.19",
+    "line-reader": "^0.4.0"
+  }
+}
