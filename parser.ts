@@ -78,13 +78,14 @@ export class Parser{
             lineReader.eachLine(inputFile, function(line, last) {
                 
                 // Proceed only if it is not an empty line
-                if(line.trim() !== "") {
+                line = line.trim();
+                if(line !== "") {
 
                     // Shift the lines by one place
                     line1 = line2;
                     line2 = line3;
                     line3 = line4;
-                    line4 = line.trim();
+                    line4 = line;
                     
                     // Find format type of the commit
                     let type: number = FormatType.Other;

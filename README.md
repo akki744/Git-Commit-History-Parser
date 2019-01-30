@@ -12,7 +12,7 @@ It enables you to convert your git commit history or git logs from a `.txt` file
 - Open Command Prompt.
 - Run `cd {projectRootDirectory}` to navigate to the project root directory and then run `npm install`to install all the dependency packages.
 - Go to any of your git project root folder and open [Git Bash](https://git-scm.com/downloads "Git Bash") and run `git log > logs.txt` to get the git commit history or git logs in `logs.txt` file.
-- Copy the output.txt file to `{projectRootDirectory}/data/`.
+- Copy the `logs.txt` file to `{projectRootDirectory}/data/`.
 - Now, go back to the current project root folder and run `build.bat "./data" "{path-to-output-folder}"`.
 
 	For Example: `build.bat "./data" "./"`
@@ -20,6 +20,7 @@ It enables you to convert your git commit history or git logs from a `.txt` file
 
 #### input.txt
     commit 32464ba4fed0cf9c530ff5a577394890a2779e8a
+    Merge: c071139 28f5c6b
     Author: Aakash Prakash <aakash.prakash@accoliteindia.com>
     Date:   Thu Jan 24 12:48:21 2019 +0530
     
@@ -40,7 +41,7 @@ It enables you to convert your git commit history or git logs from a `.txt` file
         "values": [
             {
                 "commit": "32464ba4fed0cf9c530ff5a577394890a2779e8a",
-                "merge": "",
+                "merge": "c071139 28f5c6b",
                 "author": "Aakash Prakash <aakash.prakash@accoliteindia.com>",
                 "date": "Thu Jan 24 12:48:21 2019 +0530",
                 "message": "Second Commit"
